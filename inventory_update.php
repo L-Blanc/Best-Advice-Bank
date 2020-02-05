@@ -1,6 +1,6 @@
 <?php
 	include 'database.php';
-	$query = "SELECT * FROM nuggets ORDER BY advice DESC LIMIT 10";
+	$query = "SELECT * FROM nuggets ORDER BY id ";
 	$advice = mysqli_query($conn, $query);
 ?>
 <!DOCTYPE html>
@@ -66,8 +66,8 @@
   <!-- notice how, above, the database record id becomes
        the id and value of the radio button -->
   <td><?php echo stripslashes($row['advice']); ?></td>
-  <td><?php echo $row['source']; ?></td>
-  <td><?php echo $row['why']; ?></td>
+  <td><?php echo stripslashes($row['source']); ?></td>
+  <td><?php echo stripslashes($row['why']); ?></td>
 </tr><!-- end of HTML table row -->
 
 <?php endwhile;  ?>

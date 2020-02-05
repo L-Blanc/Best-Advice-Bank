@@ -36,8 +36,8 @@ if (isset($_POST['advice']) && isset($_POST['source']) && isset($_POST['why'])) 
         mysqli_stmt_bind_param($stmt, 'sss',
         $advice,
         $source,
-        $why,
-        );
+        $why
+      );
 
         // executes the prepared statement with the values already set, above
         mysqli_stmt_execute($stmt);
