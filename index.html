@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title> Advice Bank </title>
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Alfa+Slab+One|Calistoga|Caveat|Handlee|Oleo+Script|Passion+One|Unica+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/introcss.css">
+</head>
+
+<body>
+<div id="container">
+  <div id="wrapper">
+          <section class="open-book">
+              <header>
+                  <h1>Golden Nuggets</h1>
+                  <h6>Lokela h. Blanc</h6>
+              </header>
+              <article>
+
+                  <h2 class="chapter-title">Share the best piece of advice you've ever recieved</h2>
+
+                  <p class="middle">Drop a nugget of wisdom in our advice bank.</p>
+
+                  <div id="advice1">
+                  <!-- this form is handled by the JavaScript file linked at bottom -->
+                  <form id="adviceform" method="post" action="" autocomplete="off">
+                    <label for="advice">What is the advice? </label>
+                  	<input type="text" name="advice" id="advice" maxlength="280" required>
+                    <label for="source">Who/What told/gave you this advice?</label>
+                  	<input type="text" name="source" id="source" maxlength="140" required>
+                    <label for="why">Why is it significant to you?</label>
+                  	<input type="text" name="why" id="why" max="200" required>
+
+                      <!-- step="0.01" (above) allows decimal to be entered -->
+                  	<input type="submit" id="submit" value="Submit">
+
+                  <!-- close the form -->
+                  <p class="middle">
+                    <a href="inventory_update.php">See all nuggets</a></p>
+              </form>
+                  </div> <!-- close #socks -->
+                  <!-- empty div -->
+
+                </article>
+              </section>
+              </div>
+                  <div id="response"></div>
+              <!-- close container -->
+</div> <!-- close container -->
+    <script src="js/enter.js"></script>
+</body>
+</html>
